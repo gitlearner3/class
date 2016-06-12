@@ -2,24 +2,33 @@ package main
 
 import "fmt"
 
+var a = "this is stored in the variable a"
+var b, c string = "stored in b", "stored in c"
+var d string
+
 func main() {
-	a := 10
-	b := "golang"
-	c := 4.17
-	d := true
+	d = "stored in d"
+	var e = 42
+	f := 43
+	g := "stored in g"
+	h, i := "stored in h", "stored in i"
+	j, k, l, m := 44.7, true, false, 'm'
+	n := "n"
+	o := `o`
 
-	var e int
-	var f string
-	var g float64
-	var h bool
-
-	fmt.Printf("%v with type %T \n", a, a)
-	fmt.Printf("%v with type %T \n", b, b)
-	fmt.Printf("%v with type %T \n", c, c)
-	fmt.Printf("%v with type %T \n", d, d)
-
-	fmt.Printf("%v with type %T \n", e, e)
-	fmt.Printf("%v with type %T \n", f, f)
-	fmt.Printf("%v with type %T \n", g, g)
-	fmt.Printf("%v with type %T \n", h, h)
+	fmt.Println("a - ", a)
+	fmt.Println("b - ", b)
+	fmt.Println("c - ", c)
+	fmt.Println("d - ", d)
+	fmt.Println("e - ", e)
+	fmt.Println("f - ", f)
+	fmt.Println("g - ", g)
+	fmt.Println("h - ", h)
+	fmt.Println("i - ", i)
+	fmt.Println("j - ", j)
+	fmt.Println("k - ", k)
+	fmt.Println("l - ", l)
+	fmt.Println("m - ", m)
+	fmt.Println("n - ", n)
+	fmt.Println("o - ", o)
 }
