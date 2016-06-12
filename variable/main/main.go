@@ -8,8 +8,18 @@ func main() {
 	c := 4.17
 	d := true
 
-	fmt.Printf("%v \n", a)
-	fmt.Printf("%v \n", b)
-	fmt.Printf("%v \n", c)
-	fmt.Printf("%v \n", d)
+	var e int
+	var f string
+	var g float64
+	var h bool
+
+	fmt.Printf("%v with type %T \n", a, a)
+	fmt.Printf("%v with type %T \n", b, b)
+	fmt.Printf("%v with type %T \n", c, c)
+	fmt.Printf("%v with type %T \n", d, d)
+
+	fmt.Printf("%v with type %T \n", e, e)
+	fmt.Printf("%v with type %T \n", f, f)
+	fmt.Printf("%v with type %T \n", g, g)
+	fmt.Printf("%v with type %T \n", h, h)
 }
