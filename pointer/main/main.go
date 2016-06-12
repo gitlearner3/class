@@ -15,4 +15,7 @@ func main() {
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
 	fmt.Println(*b)
+
+	*b = 100
+	fmt.Println(a)
 }
