@@ -2,18 +2,22 @@ package main
 
 import "fmt"
 
-var x int = 42
-
 func main() {
 	fmt.Println(x)
 	foo()
 	y := 17
 	fmt.Println(y)
-	fmt.Println(z)
-	z := 19
+	fmt.Println(increment())
+	fmt.Println(increment())
 }
 
 func foo() {
 	fmt.Println(x)
-	fmt.Println(y)
 }
+
+func increment() int {
+	x++
+	return x
+}
+
+var x int = 42
