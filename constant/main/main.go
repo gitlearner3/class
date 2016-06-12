@@ -14,6 +14,12 @@ const (
 	C
 )
 
+const (
+	_  = iota //0
+	KB = 1 << (iota * 10)
+	MB = 1 << (iota * 10)
+)
+
 func main() {
 	const x = "Constant local #1"
 	const y int = 43
@@ -29,4 +35,10 @@ func main() {
 	fmt.Println(A)
 	fmt.Println(B)
 	fmt.Println(C)
+
+	fmt.Println("binary\t\tdecimal")
+	fmt.Printf("%b\t", KB)
+	fmt.Printf("%d\n", KB)
+	fmt.Printf("%b\t", MB)
+	fmt.Printf("%d\n", MB)
 }
