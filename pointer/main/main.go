@@ -14,4 +14,5 @@ func main() {
 
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
+	fmt.Println(*b)
 }
