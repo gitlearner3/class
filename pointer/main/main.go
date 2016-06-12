@@ -13,4 +13,5 @@ func main() {
 	var b *int = &a
 
 	fmt.Println(b)
+	fmt.Printf("%T\n", b)
 }
