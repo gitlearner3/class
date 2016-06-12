@@ -9,6 +9,14 @@ func main() {
 	fmt.Println(y)
 	fmt.Println(increment())
 	fmt.Println(increment())
+
+	z := 0
+	increment2 := func() int {
+		z++
+		return z
+	}
+	fmt.Println(increment2())
+	fmt.Println(increment2())
 }
 
 func foo() {
