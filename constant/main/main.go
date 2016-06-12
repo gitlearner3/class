@@ -8,6 +8,11 @@ const (
 	PI       = 3.14
 	Language = "Go"
 )
+const (
+	A = iota
+	B
+	C
+)
 
 func main() {
 	const x = "Constant local #1"
@@ -20,4 +25,8 @@ func main() {
 
 	fmt.Println(PI)
 	fmt.Println(Language)
+
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(C)
 }
